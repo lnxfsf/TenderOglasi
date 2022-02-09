@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_marginBottom="8dp"
+
+    > <!-- TODO  android:layout_height="200dp", umesto 200dp, stavi wrap_content-->
+    
+    
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+
+            android:layout_marginBottom="24dp"
+            android:text="Kombi,Citroen Jumper ,2010 god. U odlicnom stanju "
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/place"
+            app:layout_constraintStart_toStartOf="@+id/place"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+
+            android:layout_marginBottom="24dp"
+            android:text="Bar"
+            android:textColor="#DC0505"
+
+
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/price"
+            app:layout_constraintStart_toStartOf="@+id/price" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="24dp"
+
+
+            android:text="45€"
+            android:textColor="#4CAF50"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/phone"
+            app:layout_constraintStart_toStartOf="@+id/phone" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="60dp"
+
+
+            android:text="+38245454545"
+            android:textColor="#3F51B5"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/date_created"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/phone"
+            android:layout_marginEnd="5dp"
+
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="16dp"
+
+
+            android:text="08.08.2020"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+
+        <ImageView
+            android:id="@+id/desc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="11dp"
+
+
+            android:layout_marginRight="11dp"
+            android:background="@drawable/ic_round_description_24"
+            app:layout_constraintBottom_toBottomOf="@+id/description"
+            app:layout_constraintEnd_toStartOf="@+id/description"
+            app:layout_constraintTop_toTopOf="@+id/description"
+            app:layout_constraintVertical_bias="0.384" />
+
+
+        <ImageView
+            android:id="@+id/pla"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="11dp"
+
+
+            android:layout_marginRight="11dp"
+            android:background="@drawable/ic_round_place_24"
+            app:layout_constraintBottom_toBottomOf="@+id/place"
+            app:layout_constraintEnd_toStartOf="@+id/place"
+            app:layout_constraintTop_toTopOf="@+id/place"
+            app:layout_constraintVertical_bias="0.384" />
+
+
+        <ImageView
+            android:id="@+id/pri"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="11dp"
+
+
+            android:layout_marginRight="11dp"
+            android:background="@drawable/ic_round_euro_24"
+            app:layout_constraintBottom_toBottomOf="@+id/price"
+            app:layout_constraintEnd_toStartOf="@+id/price"
+            app:layout_constraintTop_toTopOf="@+id/price"
+            app:layout_constraintVertical_bias="0.384" />
+
+
+        <ImageView
+            android:id="@+id/ph"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="7dp"
+
+
+            android:layout_marginRight="11dp"
+            android:background="@drawable/ic_round_phone_24"
+            app:layout_constraintBottom_toBottomOf="@+id/phone"
+            app:layout_constraintEnd_toStartOf="@+id/phone"
+            app:layout_constraintTop_toTopOf="@+id/phone"
+            app:layout_constraintVertical_bias="0.384" />
+
+
+        <ImageView
+            android:id="@+id/da"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="7dp"
+
+
+            android:layout_marginRight="11dp"
+            android:background="@drawable/ic_round_calendar_today_24"
+            app:layout_constraintBottom_toBottomOf="@+id/date_created"
+            app:layout_constraintEnd_toStartOf="@+id/date_created"
+            app:layout_constraintTop_toTopOf="@+id/date_created"
+            app:layout_constraintVertical_bias="0.384" />
+
+
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.50" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

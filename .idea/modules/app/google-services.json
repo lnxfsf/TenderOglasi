@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "259607126938",
+    "firebase_url": "https://oglasi-579af.firebaseio.com",
+    "project_id": "oglasi-579af",
+    "storage_bucket": "oglasi-579af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259607126938:android:091a20f578592aebcd5023",
+        "android_client_info": {
+          "package_name": "tenderoglasi.me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259607126938-f5pha9jva7p21f84s48idu4urq7t1u8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tenderoglasi.me",
+            "certificate_hash": "1c3b6001e7d1a19d3903fd8d2d16e5e17e617361"
+          }
+        },
+        {
+          "client_id": "259607126938-7mbv8g5ui6pvdots8kaj2pupvpuardgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_umWtdiWo8v8WjrjoOk3_HV-otFV7Z0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259607126938-7mbv8g5ui6pvdots8kaj2pupvpuardgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

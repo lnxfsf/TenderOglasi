@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tenderoglasi.me">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7799603437316055~1072055312"/>
+
+
+
+        <activity android:name=".search"></activity>
+        <activity android:name=".add_posts" />
+        <activity android:name=".posts" />
+        <activity android:name=".odjeca_obuca" />
+        <activity android:name=".zdravlje_sport" />
+        <activity android:name=".aparati_elektronika" />
+        <activity android:name=".usluzne_djelatnosti" />
+        <activity android:name=".nekretnine_oglasi" />
+        <activity android:name=".posao_oglasi" />
+        <activity
+            android:name=".auto_oglasi"
+            android:label="@string/title_activity_auto_oglasi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"
+                    android:host="tenderoglasi.me"
+                    android:pathPrefix="/" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
